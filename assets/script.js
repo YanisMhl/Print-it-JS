@@ -70,3 +70,11 @@ arrowRight.addEventListener("click", () => {
 		index++;
 	setActiveSlide(activeSlide, index);
 }); 
+
+//Rendre les bullet points cliquables
+Array.from(dots.children).forEach((e) => {
+	e.addEventListener("click", () => {
+		const activeSlide = document.querySelector(".dot_selected");
+		setActiveSlide(activeSlide, Array.from(dots.children).indexOf(e));
+	});
+});
