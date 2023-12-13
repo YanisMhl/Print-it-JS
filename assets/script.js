@@ -26,3 +26,15 @@ const arrowLeft = document.getElementsByClassName("arrow")[0];
 const arrowRight = document.getElementsByClassName("arrow")[1];
 const bannerImg = document.querySelector(".banner-img");
 const dots = document.querySelector(".dots");
+
+
+//Création éléments dots
+
+for (let i = 0; i < nbDots; i++) {
+	let dot = document.createElement("div");
+	dot.classList.add("dot");
+	if (i === 0) {
+		dot.classList.add("dot_selected");
+	}
+	dot.appendChild(dot);
+}
