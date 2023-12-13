@@ -125,11 +125,22 @@ header {
 /* Gestion des fleches du carrousel */
 #banner .arrow {
 	position: absolute;
+	border: none;
+	background: none;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
 }
 #banner .arrow_left {
+	background-image: url("images/arrow_left.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	left: 10px;
 }
 #banner .arrow_right {
+	background-image: url("images/arrow_right.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	right: 10px;
 }
 /* Gestion des points du carrousel */
