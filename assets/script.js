@@ -17,8 +17,6 @@ const slides = [
 	}
 ]
 
-console.log("test");
-
 //Déclaration variables
 const nbDots = slides.length;
 
