@@ -76,4 +76,4 @@ Array.from(dots.children).forEach((e) => {
 		const activeSlide = document.querySelector(".dot_selected");
 		setActiveSlide(activeSlide, Array.from(dots.children).indexOf(e));
 	});
-}); 
+});  
