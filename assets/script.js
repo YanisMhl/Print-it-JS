@@ -25,6 +25,7 @@ const nbDots = slides.length;
 const arrowLeft = document.getElementsByClassName("arrow")[0];
 const arrowRight = document.getElementsByClassName("arrow")[1];
 const bannerImg = document.querySelector(".banner-img");
+const paragraphe = bannerImg.nextElementSibling;
 const dots = document.querySelector(".dots");
 
 
@@ -37,4 +38,12 @@ for (let i = 0; i < nbDots; i++) {
 		dot.classList.add("dot_selected");
 	}
 	dot.appendChild(dot);
+}
+
+//fonction pour mettre à jour le slide
+function setActiveSlide(active_slide, index) {
+	active_slide.remove("dot_selected");
+	dots.children[index].classList.add("dot_selected");
+	bannerImg.src = `./assets/images/slideshow/${slides[index].image}`;
+	paragraphe.innerHTML = slides[index].tagLine;
 }
