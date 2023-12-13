@@ -44,7 +44,6 @@ for (let i = 0; i < nbDots; i++) {
 
 //fonction pour mettre à jour le slide
 function setActiveSlide(active_slide, index) {
-	console.log(index);
 	active_slide.classList.remove("dot_selected");
 	dots.children[index].classList.add("dot_selected");
 	bannerImg.src = `./assets/images/slideshow/${slides[index].image}`;
