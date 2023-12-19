@@ -70,4 +70,4 @@ arrowRight.addEventListener("click", () => {
 	else 
 		index++;
 	setActiveSlide(activeSlide, index);
-}); 
+});  
