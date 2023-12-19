@@ -55,7 +55,7 @@ function setActiveSlide(active_slide, index) {
 arrowLeft.addEventListener("click", () => {
 	const activeSlide = document.querySelector(".dot_selected");
 	let index = Array.from(dots.children).indexOf(activeSlide);
-	if (index <= 0)
+	if (index <= 0) 
 		index = nbDots - 1;
 	else
 		index--;
