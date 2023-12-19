@@ -34,6 +34,10 @@ const dots = document.querySelector(".dots");
 for (let i = 0; i < nbDots; i++) {
 	let dot = document.createElement("div");
 	dot.classList.add("dot");
+	dot.addEventListener("click", () => {
+		const activeSlide = document.querySelector(".dot_selected");
+		setActiveSlide(activeSlide, i);
+	});
 	if (i === 0) {
 		dot.classList.add("dot_selected");
 	}
@@ -69,9 +73,9 @@ arrowRight.addEventListener("click", () => {
 }); 
 
 //Rendre les bullet points cliquables
-Array.from(dots.children).forEach((e) => {
-	e.addEventListener("click", () => {
-		const activeSlide = document.querySelector(".dot_selected");
-		setActiveSlide(activeSlide, Array.from(dots.children).indexOf(e));
-	});
-});  
+// Array.from(dots.children).forEach((e) => {
+// 	e.addEventListener("click", () => {
+// 		const activeSlide = document.querySelector(".dot_selected");
+// 		setActiveSlide(activeSlide, Array.from(dots.children).indexOf(e));
+// 	});
+// });  
